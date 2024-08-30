@@ -150,3 +150,4 @@ restartButton.addEventListener("click", () => {
     remainingItemsList.innerHTML = '';
 
 });
+
