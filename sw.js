@@ -24,5 +24,6 @@ self.addEventListener("fetch",(e)=>{
     } catch (error){
       console.log(error)
     }
-  })())
+  })(),
+  )
 });
