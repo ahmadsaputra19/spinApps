@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input untuk rentang nomor -->
+        <div class="number-inputs">
+            <input type="number" id="startNumber" placeholder="Mulai dari" min="1">
+            <input type="number" id="endNumber" placeholder="Sampai" min="1">
+        </div>
+        <!-- Input untuk kata -->
+        <input type="text" id="inputWord" placeholder="Masukkan kata">
+        <button id="addButton">Tambah</button>
+        <div class="spin-container">
+            <div id="wheel">
+                <div id="itemsContainer"></div>
+            </div>
+            <div id="indicator"></div> <!-- Jarum Indikator -->
+        </div>
+        <button id="spinButton">Start Spin</button>
+        <div id="resultDisplay">Hasil Spin: <span id="resultText">-</span></div> <!-- Display Spin -->
+        <div id="remainingItems">
+            <h3>Daftar Item Tersisa:</h3>
+            <ul id="remainingItemsList"></ul> <!-- Daftar Item Tersisa -->
+        </div>
+        <button id="restartButton">Restart</button> <!-- Tombol Restart -->
+    </div>
+
+    <!-- Modal untuk Custom Alert -->
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+            <span id="alertMessage"></span>
+            <button id="closeAlert">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

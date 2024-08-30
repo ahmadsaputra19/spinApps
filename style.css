@@ -1,0 +1,193 @@
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#addButton {
+    margin-top: 20px;
+    background-color: #008000;
+    font-weight: bold;
+    color: white;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+}
+
+#spinButton {
+    width: 100%;
+    height: 100px;
+    background-color: #ffff31;
+    color: black;
+    font-weight: bold;
+}
+
+#restartButton {
+    background-color: #cc0000;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+/* Styling untuk display hasil spin */
+#resultDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk daftar item yang tersisa */
+#remainingItems {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#remainingItems h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#remainingItemsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#remainingItemsList li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#remainingItemsList li:last-child {
+    border-bottom: none;
+}
+
+/* Styling untuk spinner */
+.spin-container {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+}
+
+/* Styling untuk roda spin */
+#wheel {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling untuk container item */
+#itemsContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Menyembunyikan overflow item */
+}
+
+#itemsContainer div {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f39c12;
+    transform-origin: center;
+}
+
+/* Styling untuk jarum indikator */
+#indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid #e74c3c; /* Warna jarum */
+    transform: translate(-50%, -50%) rotate(90deg); /* Menempatkan jarum di tengah-tengah roda */
+    z-index: 10; /* Supaya indikator berada di atas roda */
+}
+
+/* Styling untuk modal alert */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 100; /* Di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Background gelap transparan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease; /* Animasi untuk efek muncul */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#closeAlert {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#closeAlert:hover {
+    background-color: #2980b9;
+}
+
+/* Animasi fade in untuk modal */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
