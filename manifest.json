@@ -1,21 +1,20 @@
 {
-  "name":"SpinFree",
+  "name":"spinapps",
   "start_url":".",
   "display":"standalone",
   "theme_color":"#414a4c",
   "background_color":"#414a4c",
   "icons":[
     {
-    "src":"./SpinFree.png",
+    "src":"SpinFree.png",
     "type":"image/png",
     "sizes":"192x192"
     },
     {
-    "src":"./SpinFree.png",
+    "src":"SpinFree.png",
     "type":"image/png",
     "sizes":"512x512",
     "purpore":"maskable"
     }
-    
-    ]
+  ]
 }
