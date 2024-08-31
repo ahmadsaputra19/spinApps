@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
 button {
     width: 100px;
     height: 50px;
@@ -102,6 +107,7 @@ input {
     align-items: center;
     overflow: hidden;
     position: relative;
+    background-color: #A30000;
 }
 
 /* Styling untuk container item */
@@ -130,17 +136,28 @@ input {
     transform-origin: center;
 }
 
+.logo {
+    position: absolute;
+    top: 6%;
+    left: 39%;
+    /* justify-content: center;
+    align-items: center; */
+    width: 150px;
+    transform: translate(50%, 50%);
+    z-index: 10;
+}
+
 /* Styling untuk jarum indikator */
 #indicator {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 47%;
+    left: 63%;
     width: 0;
-    height: 0;
+    height: 10px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 100px solid #e74c3c; /* Warna jarum */
-    transform: translate(-50%, -50%) rotate(90deg); /* Menempatkan jarum di tengah-tengah roda */
+    transform: translate(-50%, -50%) rotate(-90deg); /* Menempatkan jarum di tengah-tengah roda */
     z-index: 10; /* Supaya indikator berada di atas roda */
 }
 
@@ -191,4 +208,14 @@ input {
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media (max-width: 540px){
+    .logo{
+    left: 11.5%;
+    }
+    #indicator{
+    left: 90%;
+    border-bottom: 71px solid #e74c3c;
+    }
 }
