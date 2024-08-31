@@ -14,6 +14,18 @@ const resultText = document.getElementById("resultText");
 const remainingItemsList = document.getElementById("remainingItemsList");
 let items = [];
 
+// Fungsi untuk memeriksa apakah ada item yang tersisa di spin display
+function checkItemsBeforeUnload(event) {
+    if (items.length > 0) { // Jika masih ada item yang tersisa
+      event.preventDefault(); // Mencegah reload halaman
+      event.returnValue = ''; // Pesan yang ditampilkan saat pengguna mencoba menutup halaman
+    }
+  }
+  
+// Menambahkan event listener untuk event 'beforeunload'
+window.addEventListener('beforeunload', checkItemsBeforeUnload);
+  
+
 // Fungsi untuk menambahkan item ke dalam roda
 addButton.addEventListener("click", () => {
     const startNumber = parseInt(startNumberInput.value.trim());
