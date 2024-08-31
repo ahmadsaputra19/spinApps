@@ -138,8 +138,8 @@ input {
 
 .logo {
     position: absolute;
-    top: 6%;
-    left: 39%;
+    top: -3%;
+    left: -3%;
     /* justify-content: center;
     align-items: center; */
     width: 150px;
@@ -152,7 +152,6 @@ input {
     position: absolute;
     top: 47%;
     left: 63%;
-    width: 0;
     height: 10px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -211,11 +210,11 @@ input {
 }
 
 @media (max-width: 540px){
-    .logo{
-    left: 11.5%;
-    }
+    /* .logo{
+    left: 12%; */
+    /* } */
     #indicator{
-    left: 90%;
+    left: 92%;
     border-bottom: 71px solid #e74c3c;
     }
 }
