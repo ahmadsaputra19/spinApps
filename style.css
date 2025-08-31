@@ -3,6 +3,10 @@
     font-family: 'arial', sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 button {
     width: 100px;
     height: 50px;

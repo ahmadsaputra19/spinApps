@@ -6,12 +6,12 @@
   "background_color":"#414a4c",
   "icons":[
     {
-    "src":"SpinFree.png",
+    "src":"logoapps.png",
     "type":"image/png",
     "sizes":"192x192"
     },
     {
-    "src":"SpinFree.png",
+    "src":"logoapps.png",
     "type":"image/png",
     "sizes":"512x512",
     "purpore":"maskable"

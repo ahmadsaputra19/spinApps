@@ -94,7 +94,7 @@ spinButton.addEventListener("click", () => {
     spinButton.disabled = true;
 
     // Buat animasi putaran
-    const spins = Math.floor(Math.random() * 5) + 5; // Spin antara 5 hingga 10 putaran penuh
+    const spins = Math.floor(Math.random() * 8) + 8; // Spin antara 5 hingga 10 putaran penuh
     const degrees = spins * 360 + Math.floor(Math.random() * 360); // Konversi ke derajat dengan offset acak
 
     wheel.style.transition = "transform 4s cubic-bezier(0.33, 1, 0.68, 1)"; // Pastikan transisi diatur
